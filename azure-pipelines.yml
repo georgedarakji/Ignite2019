@@ -39,7 +39,7 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '/deploy'
+    SourceFolder: '$(Build.SourcesDirectory)/deploy'
     Contents: '**'
     TargetFolder: 'drop'
     flattenFolders: true
